@@ -13,7 +13,6 @@ import zhTW from "@vee-validate/i18n/dist/locale/zh_TW.json";
 
 import $httpMessageState from "@/libs/PushMessageState";
 import "material-icons/iconfont/material-icons.css";
-import "animate.css";
 
 import CKEditor from "@ckeditor/ckeditor5-vue";
 
