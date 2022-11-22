@@ -42,7 +42,7 @@ Demo：https://utshang.github.io/The-Florist/
 
 #### 首頁
 
-![image](https://imgur.com/a/93R2h1G)
+![image](https://i.imgur.com/V7iIkKe.png)
 
 ## Project setup
 
