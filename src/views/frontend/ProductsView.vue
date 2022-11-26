@@ -401,17 +401,18 @@ $white: #fffafa;
     height: calc(100vh - 118px);
   }
 }
+
 .card {
   border-radius: 1rem;
   transition-duration: 0.3s;
   &:hover {
     transform: translateY(-6px);
-    .fav-icon {
-      display: block;
-      animation: fav-animation;
-      animation-duration: 0.5s;
-      transition: all 0.3s ease;
-    }
+    // .fav-icon {
+    //   display: block;
+    //   animation: fav-animation;
+    //   animation-duration: 0.5s;
+    //   transition: all 0.3s ease;
+    // }
   }
   .card-img {
     height: 22rem;
@@ -433,10 +434,37 @@ $white: #fffafa;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 50%;
     cursor: pointer;
+    // display: none;
+    .favorite {
+      top: 21%;
+      left: 20%;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .fav-icon {
+    top: 3%;
+    right: 3%;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    cursor: pointer;
     display: none;
     .favorite {
       top: 21%;
       left: 20%;
+    }
+  }
+  .card {
+    &:hover {
+      .fav-icon {
+        display: block;
+        animation: fav-animation;
+        animation-duration: 0.5s;
+        transition: all 0.3s ease;
+      }
     }
   }
 }
