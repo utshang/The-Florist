@@ -5,7 +5,7 @@ Demo：https://utshang.github.io/The-Florist/
 ## 設計概念
 
 線上花藝工作室，販售花藝以及相關周邊  
-色系：咖啡色、米白  
+色系：棕色、米白  
 圖片來源： [Unsplash](https://unsplash.com/)
 
 ## 專案說明
