@@ -19,11 +19,9 @@
         class="page-item"
         :class="{ active: item === pages.current_page }"
       >
-        <span
-          class="page-link text-standard"
-          v-if="item === pages.current_page"
-          >{{ item }}</span
-        >
+        <span class="page-link text-white" v-if="item === pages.current_page">{{
+          item
+        }}</span>
         <a
           class="page-link text-standard"
           href="#"
