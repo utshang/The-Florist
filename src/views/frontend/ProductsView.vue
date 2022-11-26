@@ -214,7 +214,6 @@ export default {
       isLoading: false,
       currentPage: 1,
       search: "",
-      searchResult: [],
       searchComplete: false,
     };
   },
@@ -325,8 +324,6 @@ export default {
       // 如果輸入兩個關鍵字就會出現重複的資料，所以需要刪除重複資料。
       // 過濾出重複的元素
       return [...new Set(arr)];
-
-      // this.searchResult = [...new Set(arr)];
     },
   },
   mounted() {
