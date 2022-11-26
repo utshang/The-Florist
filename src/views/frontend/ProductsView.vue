@@ -210,7 +210,6 @@ export default {
       pagination: {},
       category: "",
       categories: [],
-      cartData: {},
       loadingItem: "",
       isLoading: false,
       currentPage: 1,
