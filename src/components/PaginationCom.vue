@@ -5,7 +5,7 @@
     <ul class="pagination">
       <li class="page-item" :class="{ disabled: !pages.has_pre }">
         <a
-          class="page-link text-standard"
+          class="page-link"
           href="#"
           aria-label="Previous"
           @click.prevent="emitPages(pages.current_page - 1)"
@@ -32,7 +32,7 @@
       </li>
       <li class="page-item" :class="{ disabled: !pages.has_next }">
         <a
-          class="page-link text-standard"
+          class="page-link"
           href="#"
           aria-label="Next"
           @click.prevent="emitPages(pages.current_page + 1)"
