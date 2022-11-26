@@ -243,7 +243,7 @@ export default {
           this.cartData = res.data.data;
         })
         .catch((err) => {
-          this.$httpMessageState(err.response, "錯誤訊息");
+          this.$httpMessageState(err.response, err.response.data.message);
         });
     },
     delProduct(id) {
@@ -288,7 +288,7 @@ export default {
           this.getFavoriteProducts();
         })
         .catch((err) => {
-          this.$httpMessageState(err.response, "錯誤訊息");
+          this.$httpMessageState(err.response, err.response.data.message);
         });
     },
     getFavoriteProducts() {

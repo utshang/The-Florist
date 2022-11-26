@@ -177,7 +177,7 @@ export default {
         })
         .catch((err) => {
           this.isLoading = false;
-          this.$httpMessageState(err.response, "錯誤訊息");
+          this.$httpMessageState(err.response, err.response.data.message);
         });
     },
     openDelArticleModal(item) {

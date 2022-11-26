@@ -84,7 +84,7 @@ export default {
           this.getRandomProducts();
         })
         .catch((err) => {
-          this.$httpMessageState(err.response, "錯誤訊息");
+          this.$httpMessageState(err.response, err.response.data.message);
         });
     },
     //Fisher-Yates Shuffle

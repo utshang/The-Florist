@@ -236,7 +236,7 @@ export default {
           this.isLoading = false;
         })
         .catch((err) => {
-          this.$httpMessageState(err.response, "錯誤訊息");
+          this.$httpMessageState(err.response, err.response.data.message);
         });
     },
     addCart(id, qty = 1) {
@@ -276,7 +276,7 @@ export default {
           this.getCategories();
         })
         .catch((err) => {
-          this.$httpMessageState(err.response, "錯誤訊息");
+          this.$httpMessageState(err.response, err.response.data.message);
         });
     },
     getCategories() {

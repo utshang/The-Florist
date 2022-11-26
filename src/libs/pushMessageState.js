@@ -14,7 +14,7 @@ export default function (res, title = "更新") {
         : res.data.message;
     emitter.emit("push-message", {
       style: "danger",
-      title: `${title}失敗`,
+      title: `${title}`,
       //join：一種陣列方法
       content: message.join("、"),
     });

@@ -209,7 +209,7 @@ export default {
           this.getCart();
         })
         .catch((err) => {
-          this.$httpMessageState(err.response, "錯誤訊息");
+          this.$httpMessageState(err.response, err.response.data.message);
         });
     },
     getRandomProducts() {
@@ -268,7 +268,7 @@ export default {
           this.isLoading = false;
         })
         .catch((err) => {
-          this.$httpMessageState(err.response, "錯誤訊息");
+          this.$httpMessageState(err.response, err.response.data.message);
         });
     },
     delProduct(id) {

@@ -213,8 +213,8 @@ export default {
           this.cartData = res.data.data;
           this.isLoading = false;
         })
-        .catch((error) => {
-          this.$httpMessageState(error.response, "錯誤訊息");
+        .catch((err) => {
+          this.$httpMessageState(err.response, err.response.data.message);
         });
     },
     createOrder() {
@@ -232,7 +232,7 @@ export default {
           this.$router.push(`/checkout/${orderId}`);
         })
         .catch((err) => {
-          this.$httpMessageState(err.response, "錯誤訊息");
+          this.$httpMessageState(err.response, err.response.data.message);
         });
     },
     goToPreviousPage() {

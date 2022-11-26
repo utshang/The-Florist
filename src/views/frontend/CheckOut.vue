@@ -114,7 +114,7 @@ export default {
           this.user = res.data.order.user;
         })
         .catch((err) => {
-          this.$httpMessageState(err.response, "錯誤訊息");
+          this.$httpMessageState(err.response, err.response.data.message);
         });
     },
     getPay(id) {
