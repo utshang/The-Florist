@@ -251,7 +251,7 @@ export default {
         .delete(
           `${process.env.VUE_APP_API}/v2/api/${process.env.VUE_APP_PATH}/cart/${id}`
         )
-        .then(() => {
+        .then((res) => {
           if (this.cartData.carts.length === 0) {
             this.hideOffcanvas();
           }
@@ -259,13 +259,13 @@ export default {
           this.emitter.emit("get-cart");
           this.emitter.emit("push-message", {
             style: "success",
-            title: "成功刪除商品囉！",
+            title: res.data.message,
           });
         })
-        .catch(() => {
+        .catch((err) => {
           this.emitter.emit("push-message", {
             style: "danger",
-            title: "刪除商品失敗囉！",
+            title: err.response.data.message,
           });
         });
     },

@@ -109,13 +109,13 @@ export default {
             this.pagination = res.data.pagination;
           }
         })
-        .catch(() => {
+        .catch((err) => {
           // axios 的錯誤狀態，可參考：https://github.com/axios/axios#handling-errors
           // console.log("error", error.response, error.request, error.message);
           this.isLoading = false;
           this.emitter.emit("push-message", {
             style: "danger",
-            title: "連線錯誤",
+            title: err.response.data.message,
           });
         });
     },
@@ -132,13 +132,13 @@ export default {
             this.isNew = false;
           }
         })
-        .catch(() => {
+        .catch((err) => {
           // axios 的錯誤狀態，可參考：https://github.com/axios/axios#handling-errors
           // console.log("error", error.response, error.request, error.message);
           this.isLoading = false;
           this.emitter.emit("push-message", {
-            title: "連線錯誤",
             style: "danger",
+            title: err.response.data.message,
           });
         });
     },

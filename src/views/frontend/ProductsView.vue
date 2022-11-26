@@ -248,19 +248,21 @@ export default {
             data: { product_id: id, qty },
           }
         )
-        .then(() => {
+        .then((res) => {
           //讀取完後清空
           this.loadingItem = "";
           this.emitter.emit("push-message", {
             style: "success",
-            title: "成功加入購物車囉！",
+            title: res.data.message,
           });
+          console.log(res);
           this.emitter.emit("get-cart");
         })
-        .catch(() => {
+        .catch((err) => {
+          this.loadingItem = "";
           this.emitter.emit("push-message", {
             style: "danger",
-            title: "加入購物車失敗囉，請重新加入！",
+            title: err.response.data.message,
           });
         });
     },

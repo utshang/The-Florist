@@ -68,11 +68,8 @@ export default {
           )};`;
           this.$router.push("/admin/products");
         })
-        .catch(() => {
-          this.emitter.emit("push-message", {
-            style: "success",
-            title: "登入失敗，請重新登入！",
-          });
+        .catch((err) => {
+          this.$httpMessageState(err.response, err.response.data.message);
           this.$router.push("/login");
         });
     },

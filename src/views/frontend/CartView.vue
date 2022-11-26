@@ -240,19 +240,19 @@ export default {
             data: { product_id: item.id, qty: item.qty },
           }
         )
-        .then(() => {
+        .then((res) => {
           this.getCart();
           this.loadingItem = "";
           this.isLoading = false;
           this.emitter.emit("push-message", {
             style: "success",
-            title: "成功更新商品囉！",
+            title: res.data.message,
           });
         })
-        .catch(() => {
+        .catch((err) => {
           this.emitter.emit("push-message", {
             style: "danger",
-            title: "更新商品失敗囉！",
+            title: err.response.data.message,
           });
         });
     },
@@ -277,19 +277,19 @@ export default {
         .delete(
           `${process.env.VUE_APP_API}/v2/api/${process.env.VUE_APP_PATH}/cart/${id}`
         )
-        .then(() => {
+        .then((res) => {
           this.getCart();
           this.isLoading = false;
           this.emitter.emit("get-cart");
           this.emitter.emit("push-message", {
             style: "success",
-            title: "成功刪除商品囉！",
+            title: res.data.message,
           });
         })
-        .catch(() => {
+        .catch((err) => {
           this.emitter.emit("push-message", {
             style: "danger",
-            title: "刪除商品失敗囉！",
+            title: err.response.data.message,
           });
         });
     },
@@ -299,19 +299,19 @@ export default {
         .delete(
           `${process.env.VUE_APP_API}/v2/api/${process.env.VUE_APP_PATH}/carts`
         )
-        .then(() => {
+        .then((res) => {
           this.getCart();
           this.emitter.emit("push-message", {
             style: "success",
-            title: "成功刪除所有商品囉！",
+            title: res.data.message,
           });
           this.emitter.emit("get-cart");
           this.isLoading = false;
         })
-        .catch(() => {
+        .catch((err) => {
           this.emitter.emit("push-message", {
             style: "danger",
-            title: "刪除所有商品失敗囉！",
+            title: err.response.data.message,
           });
         });
     },
@@ -334,13 +334,13 @@ export default {
           this.getCart();
           this.emitter.emit("push-message", {
             style: "success",
-            title: "優惠碼套用成功！",
+            title: res.data.message,
           });
         })
-        .catch(() => {
+        .catch((err) => {
           this.emitter.emit("push-message", {
             style: "danger",
-            title: "優惠碼不存在！",
+            title: err.response.data.message,
           });
         });
     },

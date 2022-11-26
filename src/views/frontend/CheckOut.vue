@@ -126,10 +126,10 @@ export default {
           this.emitter.emit("get-cart");
           this.$router.push(`/orderfinished`);
         })
-        .catch(() => {
+        .catch((err) => {
           this.emitter.emit("push-message", {
             style: "danger",
-            title: "付款失敗，請重新付款！",
+            title: err.response.data.message,
           });
         });
     },
