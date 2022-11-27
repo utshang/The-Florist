@@ -4,7 +4,6 @@ export default {
     return {
       //從 localStorage 取出資料
       //給預設值[]
-      fixFav: false,
       favorite: JSON.parse(localStorage.getItem("favorite")) || [],
     };
   },
