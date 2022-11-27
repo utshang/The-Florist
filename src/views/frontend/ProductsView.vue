@@ -234,6 +234,7 @@ export default {
           this.products = res.data.products;
           this.pagination = res.data.pagination;
           this.isLoading = false;
+          console.log(this.pagination);
         })
         .catch((err) => {
           this.$httpMessageState(err.response, err.response.data.message);
