@@ -19,7 +19,7 @@
             type="search"
             v-model.trim="search"
             placeholder="請輸入關鍵字"
-            class="fs-7 px-2 rounded-0 border border-1 border-muted w-100"
+            class="form-control fs-7 px-2 rounded-0 border border-1 border-muted w-100"
           />
           <button
             type="submit"
