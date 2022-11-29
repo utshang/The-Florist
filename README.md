@@ -60,7 +60,7 @@ Demo：https://utshang.github.io/The-Florist/
 
 ![image](https://i.imgur.com/KDyy7sB.png)
 
-- Swiper.js 多圖功能：有兩張｀以上產品圖的產品，將判斷以多圖的方式呈現
+- Swiper.js 多圖功能：有兩張以上產品圖的產品，將判斷以多圖的方式呈現
 - 加入購物車
 - 加入收藏
 - Toast 訊息
