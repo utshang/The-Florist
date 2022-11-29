@@ -249,9 +249,16 @@ export default {
 $gray-300: #dee2e6;
 
 .cart-img {
-  height: 7.5rem;
-  width: 7.5rem;
+  height: 6.5rem;
+  width: 6.5rem;
   object-fit: cover;
+}
+
+@media screen and (min-width: 425px) {
+  .cart-img {
+    height: 7.5rem;
+    width: 7.5rem;
+  }
 }
 @media screen and (min-width: 769px) {
   form {
