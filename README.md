@@ -67,7 +67,7 @@ Demo：https://utshang.github.io/The-Florist/
 
 ![image](https://i.imgur.com/xrjf7ZI.png)
 
-- 推薦商品：於全部產品中隨機篩選出 10 個產品，並以輪播方式呈現
+- 推薦商品：排除掉造訪的商品後隨機篩選出 10 個產品，並以輪播方式呈現
 
 #### 購物車
 
@@ -78,7 +78,7 @@ Demo：https://utshang.github.io/The-Florist/
 - 刪除購物車/單一品項
 - 優惠券套用
 - Toast 訊息
-- 推薦商品：於全部產品中隨機篩選出 10 個產品，並以輪播方式呈現
+- 推薦商品：排除掉購物車內有的產品後隨機篩選出 10 個產品，並以輪播方式呈現
 
 #### 結帳流程
 
