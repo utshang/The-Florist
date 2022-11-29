@@ -399,7 +399,7 @@ h2 {
 
 @media screen and (min-width: 769px) {
   .price-group {
-    width: 16rem;
+    width: 30%;
   }
 }
 
@@ -413,7 +413,7 @@ h2 {
 
 @media screen and (min-width: 769px) {
   .apply {
-    width: 16rem;
+    width: 30%;
   }
 }
 .chekout-btn {
@@ -422,7 +422,7 @@ h2 {
 
 @media screen and (min-width: 769px) {
   .chekout-btn {
-    width: 16rem;
+    width: 30%;
   }
 }
 </style>
