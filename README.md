@@ -64,7 +64,23 @@ Demo：https://utshang.github.io/The-Florist/
 - 加入購物車
 - 加入收藏
 - Toast 訊息
+
+![image](https://i.imgur.com/xrjf7ZI.png)
+
 - 推薦商品：於全部產品中隨機篩選出 10 個產品，並以輪播方式呈現
+
+#### 購物車
+
+![image](https://i.imgur.com/hnuSzVv.png)
+
+- 進度條
+- 更新商品數量
+- 刪除購物車/單一品項
+- 優惠券套用
+- Toast 訊息
+- 推薦商品：於全部產品中隨機篩選出 10 個產品，並以輪播方式呈現
+
+#### 結帳流程
 
 ## Project setup
 
