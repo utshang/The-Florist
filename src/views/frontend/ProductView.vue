@@ -4,13 +4,8 @@
       <div class="row">
         <div class="product-img text-xl-end col-md-7">
           <div
-            class="product-img-img"
+            class="product-img-imageUrl"
             v-if="!product.imagesUrl"
-            style="
-              height: 45rem;
-              background-position: center center;
-              background-size: cover;
-            "
             :style="{ backgroundImage: `url(${product.imageUrl})` }"
           ></div>
           <ProductSwiper v-else :product="product" />
@@ -363,6 +358,13 @@ del {
     padding-right: 4rem;
   }
 }
+
+.product-img-imageUrl {
+  height: 45rem;
+  background-position: center center;
+  background-size: cover;
+}
+
 .product-description {
   background-color: #e6ccab57;
   border-left: 3px solid $secondary;

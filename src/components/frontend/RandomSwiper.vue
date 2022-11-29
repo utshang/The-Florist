@@ -15,11 +15,6 @@
           <RouterLink :to="`/product/${item.id}`">
             <div
               class="swiper-slide-inner"
-              style="
-                height: 18rem;
-                background-position: center center;
-                background-size: cover;
-              "
               :style="{ backgroundImage: `url(${item.imageUrl})` }"
             ></div>
           </RouterLink>
@@ -123,6 +118,9 @@ export default {
     border-radius: 1rem;
     .swiper-slide-inner {
       border-radius: 1rem;
+      height: 18rem;
+      background-position: center center;
+      background-size: cover;
       &:hover {
         opacity: 0.7;
       }
