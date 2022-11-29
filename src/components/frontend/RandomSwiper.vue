@@ -3,8 +3,9 @@
     <swiper
       :modules="modules"
       :space-between="50"
-      autoplay
+      :navigation="true"
       :breakpoints="swiper.breakpoints"
+      autoplay
     >
       <swiper-slide
         v-for="item in randomProducts"
