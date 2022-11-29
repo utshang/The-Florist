@@ -85,13 +85,12 @@ export default {
     },
     //Fisher-Yates Shuffle
     getRandomProducts() {
+      //排除掉造訪的商品
       const productItemId = this.$route.params.id;
       this.randomProducts = this.products.filter(
         (item) => item.id !== productItemId
       );
       console.log(this.$route.params.id);
-      //將 products 賦予到 randomProducts，用 randomProducts 隨機排序
-      // this.randomProducts = this.products;
       for (let i = this.randomProducts.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
         [this.randomProducts[i], this.randomProducts[j]] = [
