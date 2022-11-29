@@ -369,6 +369,7 @@ $gray-600: #6c757d;
   width: 7.5rem;
   object-fit: cover;
 }
+
 .add_shopping_cart {
   font-size: 3rem;
 }
