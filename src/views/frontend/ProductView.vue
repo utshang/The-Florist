@@ -239,7 +239,6 @@ export default {
       product: {
         imageUrl: "",
       },
-      productId: "",
       qty: 1,
       loadingItem: "",
       isLoading: false,
@@ -257,21 +256,6 @@ export default {
         .then((res) => {
           this.product = res.data.product;
           this.isLoading = false;
-        })
-        .catch((err) => {
-          this.$httpMessageState(err.response, err.response.data.message);
-        });
-    },
-    updateCartItem(item) {
-      this.$http
-        .put(
-          `${process.env.VUE_APP_API}/v2/api/${process.env.VUE_APP_PATH}/cart/${item.id}`,
-          {
-            data: { product_id: item.id, qty: item.qty },
-          }
-        )
-        .then(() => {
-          this.getCart();
         })
         .catch((err) => {
           this.$httpMessageState(err.response, err.response.data.message);
