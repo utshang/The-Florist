@@ -190,9 +190,7 @@ export default {
       message: "",
       products: [],
       randomProducts: [],
-
       loadingItem: "",
-
       isLoading: false,
       cartPrice: {},
       cartData: {},

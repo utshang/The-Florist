@@ -3,6 +3,7 @@
     <Swiper
       :modules="modules"
       :space-between="50"
+      :navigation="true"
       :breakpoints="swiper.breakpoints"
       autoplay
     >
