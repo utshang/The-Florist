@@ -90,7 +90,6 @@ export default {
       this.randomProducts = this.products.filter(
         (item) => item.id !== productItemId
       );
-      console.log(this.$route.params.id);
       for (let i = this.randomProducts.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
         [this.randomProducts[i], this.randomProducts[j]] = [
