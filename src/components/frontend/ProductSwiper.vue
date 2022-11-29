@@ -2,17 +2,19 @@
   <swiper
     :spaceBetween="10"
     :navigation="false"
+    :pagination="true"
+    autoplay
     :thumbs="{ swiper: swiper.thumbsSwiper }"
     :modules="modules"
   >
     <swiper-slide>
       <div
         class="swiper-slide-inner"
-        :style="{ backgroundImage: `url(${product.imageUrl})` }"
+        :style="{ backgroundImage: `url(${productSwiper.imageUrl})` }"
       ></div>
     </swiper-slide>
     <swiper-slide
-      v-for="(img, index) in product.imagesUrl"
+      v-for="(img, index) in productSwiper.imagesUrl"
       :key="`swiperImage_${index}`"
     >
       <div
@@ -26,20 +28,20 @@
     @swiper="setThumbsSwiper"
     :spaceBetween="10"
     :slidesPerView="4"
-    :freeMode="true"
     :watchSlidesProgress="true"
     :watchSlidesVisibility="true"
     :modules="modules"
+    :breakpoints="swiper.breakpoints"
     class="mySwiper mt-3"
   >
     <swiper-slide>
       <div
         class="slides"
-        :style="{ backgroundImage: `url(${product.imageUrl})` }"
+        :style="{ backgroundImage: `url(${productSwiper.imageUrl})` }"
       ></div>
     </swiper-slide>
     <swiper-slide
-      v-for="(img, index) in product.imagesUrl"
+      v-for="(img, index) in productSwiper.imagesUrl"
       :key="`swiperImage_${index}`"
     >
       <div class="slides" :style="{ backgroundImage: `url(${img})` }"></div>
@@ -64,7 +66,7 @@ import "swiper/css/thumbs";
 
 export default {
   props: {
-    product: Object,
+    productSwiper: {},
   },
   components: { Swiper, SwiperSlide },
   data() {
@@ -78,15 +80,24 @@ export default {
         },
         breakpoints: {
           0: {
-            slidesPerView: 1,
+            slidesPerView: 3,
+            spaceBetween: 60,
+          },
+          425: {
+            slidesPerView: 3,
+            spaceBetween: 10,
           },
           768: {
-            slidesPerView: 2,
-            spaceBetween: 30,
+            slidesPerView: 4,
+            spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 3,
-            spaceBetween: 50,
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1440: {
+            slidesPerView: 5,
+            spaceBetween: 0,
           },
         },
       },
@@ -114,27 +125,27 @@ export default {
   background-size: cover;
 }
 
-.swiper-slide-visible {
-  margin-right: 3.75rem !important;
-}
-@media screen and (min-width: 425px) {
-  .swiper-slide-visible {
-    margin-right: 3.125rem !important;
-  }
-}
-@media screen and (min-width: 768px) {
-  .swiper-slide-visible {
-    margin-right: 1.2rem !important;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .swiper-slide-visible {
-    margin-right: 1rem !important;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .swiper-slide-visible {
-    margin-right: -1.5rem !important;
-  }
-}
+// .swiper-slide-visible {
+//   margin-right: 3.75rem !important;
+// }
+// @media screen and (min-width: 425px) {
+//   .swiper-slide-visible {
+//     margin-right: 3.125rem !important;
+//   }
+// }
+// @media screen and (min-width: 768px) {
+//   .swiper-slide-visible {
+//     margin-right: 1.2rem !important;
+//   }
+// }
+// @media screen and (min-width: 1024px) {
+//   .swiper-slide-visible {
+//     margin-right: 1rem !important;
+//   }
+// }
+// @media screen and (min-width: 1440px) {
+//   .swiper-slide-visible {
+//     margin-right: -1.5rem !important;
+//   }
+// }
 </style>
