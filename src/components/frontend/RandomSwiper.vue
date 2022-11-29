@@ -83,13 +83,17 @@ export default {
           this.$httpMessageState(err.response, err.response.data.message);
         });
     },
-    //Fisher-Yates Shuffle
     getRandomProducts() {
       //排除掉造訪的商品
-      const productItemId = this.$route.params.id;
-      this.randomProducts = this.products.filter(
-        (item) => item.id !== productItemId
-      );
+      if (this.$route.params.id) {
+        const productItemId = this.$route.params.id;
+        this.randomProducts = this.products.filter(
+          (item) => item.id !== productItemId
+        );
+      } else {
+        this.randomProducts = this.products;
+      }
+
       for (let i = this.randomProducts.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
         [this.randomProducts[i], this.randomProducts[j]] = [
