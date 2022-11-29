@@ -8,7 +8,7 @@
             v-if="!product.imagesUrl"
             :style="{ backgroundImage: `url(${product.imageUrl})` }"
           ></div>
-          <ProductSwiper v-else :product="product" />
+          <ProductSwiper v-else :productSwiper="product" />
         </div>
         <div class="product-body col-md-5 mt-4 mt-md-0">
           <div class="d-flex justify-content-between">
