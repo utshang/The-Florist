@@ -1,6 +1,5 @@
 <template>
   <swiper
-    :spaceBetween="10"
     :navigation="false"
     :pagination="true"
     autoplay
@@ -26,7 +25,6 @@
 
   <swiper
     @swiper="setThumbsSwiper"
-    :spaceBetween="10"
     :slidesPerView="4"
     :watchSlidesProgress="true"
     :watchSlidesVisibility="true"
@@ -124,28 +122,4 @@ export default {
   background-position: center center;
   background-size: cover;
 }
-
-// .swiper-slide-visible {
-//   margin-right: 3.75rem !important;
-// }
-// @media screen and (min-width: 425px) {
-//   .swiper-slide-visible {
-//     margin-right: 3.125rem !important;
-//   }
-// }
-// @media screen and (min-width: 768px) {
-//   .swiper-slide-visible {
-//     margin-right: 1.2rem !important;
-//   }
-// }
-// @media screen and (min-width: 1024px) {
-//   .swiper-slide-visible {
-//     margin-right: 1rem !important;
-//   }
-// }
-// @media screen and (min-width: 1440px) {
-//   .swiper-slide-visible {
-//     margin-right: -1.5rem !important;
-//   }
-// }
 </style>
