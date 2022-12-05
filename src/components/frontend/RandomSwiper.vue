@@ -84,7 +84,6 @@ export default {
         });
     },
     getRandomProducts() {
-      //排除掉造訪的商品
       if (this.$route.params.id) {
         const productItemId = this.$route.params.id;
         this.randomProducts = this.products.filter(
@@ -93,7 +92,6 @@ export default {
       } else {
         this.randomProducts = this.products;
       }
-
       for (let i = this.randomProducts.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
         [this.randomProducts[i], this.randomProducts[j]] = [
@@ -101,7 +99,6 @@ export default {
           this.randomProducts[i],
         ];
       }
-      //從索引值0開始刪除後面10個元素，並把刪除的元素通通傳回來
       this.randomProducts = this.randomProducts.splice(0, 10);
     },
   },
