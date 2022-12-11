@@ -186,7 +186,6 @@ export default {
   data() {
     return {
       couponCode: "",
-      success: "",
       message: "",
       products: [],
       randomProducts: [],
@@ -326,7 +325,6 @@ export default {
           { data }
         )
         .then((res) => {
-          this.success = res.data.success;
           this.message = res.data.message;
           this.couponCode = "";
           this.getCart();
