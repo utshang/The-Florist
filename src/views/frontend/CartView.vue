@@ -126,7 +126,7 @@
             <div class="d-flex apply my-3">
               <input
                 type="text "
-                class="form-control apply-input fs-7 rounded-0 border border-2 border-muted search"
+                class="form-control apply-input fs-7 rounded-0 border border-2 border-muted"
                 v-model="couponCode"
                 :placeholder="message"
               />
