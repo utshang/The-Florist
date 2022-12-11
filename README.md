@@ -42,7 +42,7 @@ Demo：https://utshang.github.io/The-Florist/
 
 #### 首頁
 
-![image](https://imgur.com/V7iIkKe)
+![image](https://i.imgur.com/V7iIkKe.png)
 
 #### 產品頁面
 
@@ -54,7 +54,7 @@ Demo：https://utshang.github.io/The-Florist/
 - Toast 訊息
 - 分頁
 
-![image](https://imgur.com/H0YG0HF)
+![image](https://i.imgur.com/H0YG0HF.png)
 
 #### 單一產品頁面
 
@@ -63,11 +63,11 @@ Demo：https://utshang.github.io/The-Florist/
 - 加入收藏
 - Toast 訊息
 
-![image](https://imgur.com/KDyy7sB)
+![image](https://i.imgur.com/KDyy7sB.png)
 
 - 推薦商品：排除掉造訪的商品後隨機篩選出 10 個產品，並以輪播方式呈現
 
-![image](https://imgur.com/xrjf7ZI)
+![image](https://i.imgur.com/xrjf7ZI.png)
 
 #### 我的收藏
 
@@ -75,7 +75,7 @@ Demo：https://utshang.github.io/The-Florist/
 - 取消收藏
 - 加入購物車
 
-![image](https://imgur.com/awDxDte)
+![image](https://i.imgur.com/awDxDte.png)
 
 #### 購物車
 
@@ -86,7 +86,7 @@ Demo：https://utshang.github.io/The-Florist/
 - Toast 訊息
 - 推薦商品：排除掉購物車內有的產品後隨機篩選出 10 個產品，並以輪播方式呈現
 
-![image](https://imgur.com/hnuSzVv)
+![image](https://i.imgur.com/hnuSzVv.png)
 
 #### 結帳流程
 
@@ -95,21 +95,21 @@ Demo：https://utshang.github.io/The-Florist/
 - 訂單成立
 - 訂單付款
 
-![image](https://imgur.com/xU1QrB9)
+![image](https://i.imgur.com/xU1QrB9)
 
 #### 最新消息
 
 - 文章呈現
 
-![image](https://imgur.com/yKlyPia)
-![image](https://imgur.com/pawfZtQ)
+![image](https://i.imgur.com/yKlyPia.png)
+![image](https://i.imgur.com/pawfZtQ.png)
 
 #### 聯絡我們
 
 - Vee Validate 表單驗證
 - 建立 Google App Script 資料庫
 
-![image](https://imgur.com/ECSAmuz)
+![image](https://i.imgur.com/ECSAmuz.png)
 
 ## Project setup
 
