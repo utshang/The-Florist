@@ -95,7 +95,7 @@ Demo：https://utshang.github.io/The-Florist/
 - 訂單成立
 - 訂單付款
 
-![image](https://i.imgur.com/xU1QrB9)
+![image](https://i.imgur.com/xU1QrB9.png)
 
 #### 最新消息
 
