@@ -38,15 +38,13 @@ Demo：https://utshang.github.io/The-Florist/
 - 優惠卷管理
 - 文章管理
 
-### 前端介紹
+### 前端介紹 - 前台
 
 #### 首頁
 
-![image](https://i.imgur.com/V7iIkKe.png)
+![image](https://imgur.com/V7iIkKe)
 
 #### 產品頁面
-
-![image](https://i.imgur.com/H0YG0HF.png)
 
 - 點擊產品前往該單一產品頁面
 - 產品類別篩選
@@ -56,22 +54,30 @@ Demo：https://utshang.github.io/The-Florist/
 - Toast 訊息
 - 分頁
 
-#### 單一產品頁面
+![image](https://imgur.com/H0YG0HF)
 
-![image](https://i.imgur.com/KDyy7sB.png)
+#### 單一產品頁面
 
 - Swiper.js 多圖功能：有兩張以上產品圖的產品，將判斷以多圖的方式呈現
 - 加入購物車
 - 加入收藏
 - Toast 訊息
 
-![image](https://i.imgur.com/xrjf7ZI.png)
+![image](https://imgur.com/KDyy7sB)
 
 - 推薦商品：排除掉造訪的商品後隨機篩選出 10 個產品，並以輪播方式呈現
 
-#### 購物車
+![image](https://imgur.com/xrjf7ZI)
 
-![image](https://i.imgur.com/hnuSzVv.png)
+#### 我的收藏
+
+- 導往單一產品頁面
+- 取消收藏
+- 加入購物車
+
+![image](https://imgur.com/awDxDte)
+
+#### 購物車
 
 - 進度條
 - 更新商品數量
@@ -80,7 +86,30 @@ Demo：https://utshang.github.io/The-Florist/
 - Toast 訊息
 - 推薦商品：排除掉購物車內有的產品後隨機篩選出 10 個產品，並以輪播方式呈現
 
+![image](https://imgur.com/hnuSzVv)
+
 #### 結帳流程
+
+- 進度條
+- Vee Validate 表單驗證
+- 訂單成立
+- 訂單付款
+
+![image](https://imgur.com/xU1QrB9)
+
+#### 最新消息
+
+- 文章呈現
+
+![image](https://imgur.com/yKlyPia)
+![image](https://imgur.com/pawfZtQ)
+
+#### 聯絡我們
+
+- Vee Validate 表單驗證
+- 建立 Google App Script 資料庫
+
+![image](https://imgur.com/ECSAmuz)
 
 ## Project setup
 
