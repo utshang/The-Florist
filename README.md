@@ -46,11 +46,10 @@ Demo：https://utshang.github.io/The-Florist/
 
 #### 產品頁面
 
-- 點擊產品前往該單一產品頁面
 - 產品類別篩選
 - 關鍵字搜尋
 - 加入購物車
-- 加入收藏
+- 加入/取消收藏
 - Toast 訊息
 - 分頁
 
@@ -60,7 +59,7 @@ Demo：https://utshang.github.io/The-Florist/
 
 - Swiper.js 多圖功能：有兩張以上產品圖的產品，將判斷以多圖的方式呈現
 - 加入購物車
-- 加入收藏
+- 加入/取消收藏
 - Toast 訊息
 
 ![image](https://i.imgur.com/KDyy7sB.png)
@@ -69,9 +68,8 @@ Demo：https://utshang.github.io/The-Florist/
 
 ![image](https://i.imgur.com/xrjf7ZI.png)
 
-#### 我的收藏
+#### 我的最愛
 
-- 導往單一產品頁面
 - 取消收藏
 - 加入購物車
 
@@ -110,6 +108,22 @@ Demo：https://utshang.github.io/The-Florist/
 - 建立 Google App Script 資料庫
 
 ![image](https://i.imgur.com/ECSAmuz.png)
+
+### 前端介紹 - 後台
+
+#### 產品管理
+
+- 建立產品
+- 編輯產品
+- 刪除產品
+
+![image](https://i.imgur.com/yBsugBf.png)
+
+#### 訂單管理
+
+#### 優惠卷管理
+
+#### 文章管理
 
 ## Project setup
 
