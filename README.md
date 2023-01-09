@@ -116,6 +116,7 @@ Demo：https://utshang.github.io/The-Florist/
 - 建立產品
 - 編輯產品
 - 刪除產品
+- 分頁
 
 ![image](https://i.imgur.com/yBsugBf.png)
 
