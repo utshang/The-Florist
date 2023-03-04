@@ -123,9 +123,31 @@ Demo：https://utshang.github.io/The-Florist/
 
 #### 訂單管理
 
+- 修改付款狀態
+- 刪除訂單
+- 分頁
+
+![image](https://i.imgur.com/LxG7yZY.png)
+
 #### 優惠卷管理
 
+- 建立優惠卷
+- 編輯優惠卷
+- 刪除優惠卷
+- 分頁
+
+![image](https://i.imgur.com/GNHHsjR.png)
+
 #### 文章管理
+
+- 建立文章
+- 編輯文章
+- 刪除文章
+- 文字編輯器
+- 新增/刪除標籤
+- 分頁
+
+![image](https://i.imgur.com/wxwcEGt.png)
 
 ## Project setup
 
