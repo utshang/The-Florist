@@ -77,9 +77,6 @@ import PaginationCom from "@/components/PaginationCom.vue";
 
 export default {
   components: { CouponModal, DelModal, PaginationCom },
-  props: {
-    config: Object,
-  },
   data() {
     return {
       coupons: {},

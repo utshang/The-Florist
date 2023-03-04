@@ -89,7 +89,6 @@ export default {
     DelModal,
     PaginationCom,
   },
-  // props: ["token"],
   data() {
     return {
       products: [],

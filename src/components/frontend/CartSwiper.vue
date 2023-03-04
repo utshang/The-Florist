@@ -93,8 +93,6 @@ export default {
     return {
       loadingItem: "",
       isLoading: false,
-
-      randomProducts: [],
       modules: [Navigation, Pagination, Autoplay, EffectCoverflow],
       swiper: {
         autoplay: {

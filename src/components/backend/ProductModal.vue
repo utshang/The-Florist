@@ -294,23 +294,31 @@ export default {
         )
         .then((res) => {
           this.status.fileUploading = false;
-          if (res.data.success) {
-            this.tempProduct.imageUrl = res.data.imageUrl;
-            this.$refs.fileInput.value = "";
-            //傳遞資料
-            this.emitter.emit("push-message", {
-              style: "success",
-              title: "圖片已上傳",
-              content: res.data.message,
-            });
-          } else {
-            this.$refs.fileInput.value = "";
-            this.emitter.emit("push-message", {
-              style: "danger",
-              title: "圖片已上傳",
-              content: res.data.message,
-            });
-          }
+          this.tempProduct.imageUrl = res.data.imageUrl;
+          this.$refs.fileInput.value = "";
+          //傳遞資料
+          this.emitter.emit("push-message", {
+            style: "success",
+            title: "圖片已上傳",
+            content: res.data.message,
+          });
+          // if (res.data.success) {
+          //   this.tempProduct.imageUrl = res.data.imageUrl;
+          //   this.$refs.fileInput.value = "";
+          //   //傳遞資料
+          //   this.emitter.emit("push-message", {
+          //     style: "success",
+          //     title: "圖片已上傳",
+          //     content: res.data.message,
+          //   });
+          // } else {
+          //   this.$refs.fileInput.value = "";
+          //   this.emitter.emit("push-message", {
+          //     style: "danger",
+          //     title: "圖片已上傳",
+          //     content: res.data.message,
+          //   });
+          // }
         })
         .catch((err) => {
           this.status.fileUploading = false;
@@ -319,9 +327,9 @@ export default {
     },
   },
   watch: {
-    //監聽props的product
+    //監聽 props 的 product
     product() {
-      //使用tempProduct去接收外層的資料product
+      //單向數據流，使用本地 tempProduct 去接收外層的資料 product
       this.tempProduct = this.product;
       if (!this.tempProduct.imagesUrl) {
         this.tempProduct.imagesUrl = [];
