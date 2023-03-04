@@ -39,10 +39,10 @@
                 <p>下單時間：{{ $filters.date(tempOrder.create_at) }}</p>
                 <p>
                   付款時間：
-                  <span v-if="tempOrder.paid_date">
+                  <span v-if="tempOrder.is_paid">
                     {{ $filters.date(tempOrder.paid_date) }}
                   </span>
-                  <span v-else>時間不正確</span>
+                  <span v-else>尚未付款</span>
                 </p>
                 <div>
                   付款狀態：
@@ -125,10 +125,9 @@ export default {
   },
   data() {
     return {
-      status: {},
       modal: "",
       tempOrder: {},
-      isPaid: false,
+      isPaid: "",
     };
   },
   emits: ["update-paid"],
