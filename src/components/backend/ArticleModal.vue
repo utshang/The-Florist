@@ -207,3 +207,10 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable,
+.ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners {
+  height: 200px !important;
+}
+</style>
