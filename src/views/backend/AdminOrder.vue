@@ -108,8 +108,7 @@ export default {
       this.isLoading = true;
       this.$http
         .get(
-          `${process.env.VUE_APP_API}/v2/api/${process.env.VUE_APP_PATH}/admin/orders?page=${currentPage}`,
-          this.tempProduct
+          `${process.env.VUE_APP_API}/v2/api/${process.env.VUE_APP_PATH}/admin/orders?page=${currentPage}`
         )
         .then((res) => {
           this.orders = res.data.orders;
