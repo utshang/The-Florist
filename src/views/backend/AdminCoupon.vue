@@ -61,7 +61,7 @@
     />
     <CouponModal
       :coupon="tempCoupon"
-      :is-new="isNew"
+      :isNew="isNew"
       ref="couponModal"
       @update-coupon="updateCoupon"
     />
