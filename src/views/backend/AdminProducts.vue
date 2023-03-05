@@ -94,6 +94,7 @@ export default {
       products: [],
       pagination: {},
       tempProduct: {},
+      currentPage: 1,
       isNew: false,
       isLoading: false,
       status: {
@@ -102,13 +103,11 @@ export default {
     };
   },
   methods: {
-    getProductsList(page) {
-      if (page === undefined) {
-        page = this.pagination.current_page ? this.pagination.current_page : 1;
-      }
+    getProductsList(currentPage = 1) {
+      this.currentPage = currentPage;
       this.$http
         .get(
-          `${process.env.VUE_APP_API}/v2/api/${process.env.VUE_APP_PATH}/admin/products/?page=${page}`
+          `${process.env.VUE_APP_API}/v2/api/${process.env.VUE_APP_PATH}/admin/products/?page=${currentPage}`
         )
         .then((res) => {
           this.products = res.data.products;
@@ -147,7 +146,7 @@ export default {
           //$httpMessageState已經import在全域main.js中，不需要再import，在任何地方都可以使用
           this.$httpMessageState(res, status);
           productComponent.hideModal();
-          this.getProductsList(this.pagination.current_page);
+          this.getProductsList(this.currentPage);
         })
         .catch((err) => {
           this.isLoading = false;
@@ -170,7 +169,7 @@ export default {
           this.$httpMessageState(res, "刪除產品");
           const delComponent = this.$refs.delModal;
           delComponent.hideModal();
-          this.getProductsList(this.pagination.current_page);
+          this.getProductsList(this.currentPage);
         })
         .catch((err) => {
           this.isLoading = false;
