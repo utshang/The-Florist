@@ -7,7 +7,7 @@
     }"
   >
     <div class="position-absolute start-50 top-50 translate-middle text-white">
-      <h1 class="title">The Florist</h1>
+      <h1 class="title sansita-swashed">The Florist</h1>
       <h2 class="fs-6 mt-3 mb-5 slogan">
         希望你的生活，有 The Florist 花閣的陪伴
       </h2>
@@ -28,7 +28,7 @@
         class="category-des d-flex flex-column justify-content-center align-items-center col-md-6"
       >
         <h2 class="fs-2 text-primary fw-bold category-title">
-          花束 <span class="fs-5">Bouquet｀</span>
+          花束 <span class="fs-5 sansita-swashed">Bouquet</span>
         </h2>
         <h3 class="text-light lh-lg my-3 fs-6">
           為想傳遞愛的你，
@@ -48,7 +48,7 @@
           class="category-des d-flex flex-column justify-content-center align-items-center col-md-6"
         >
           <h2 class="fs-2 text-primary fw-bold category-title">
-            花籃 <span class="fs-5">Flower Basket</span>
+            花籃 <span class="fs-5 sansita-swashed">Flower Basket</span>
           </h2>
           <h3 class="text-light lh-lg my-3 fs-6">
             在聚會或派對時，<br />除了美食佳餚填滿我們的胃，<br />滂薄的花籃與瀰漫的香氣也滿足了視覺與嗅覺！
@@ -66,7 +66,7 @@
         class="category-des d-flex flex-column justify-content-center align-items-center col-md-6"
       >
         <h2 class="fs-2 text-primary fw-bold category-title">
-          花材 <span class="fs-5">Materials</span>
+          花材 <span class="fs-5 sansita-swashed">Materials</span>
         </h2>
         <h3 class="text-light lh-lg my-3 fs-6">
           為想創造生活儀式感的你，<br />準備了精選的花材，從經典到獨有，<br />讓你親自挑選、親自搭配、親自包裝、親自享受！<br />
@@ -84,10 +84,10 @@
           class="category-des d-flex flex-column justify-content-center align-items-center col-md-6"
         >
           <h2 class="fs-2 text-primary fw-bold category-title">
-            器皿 <span class="fs-5">Vase</span>
+            器皿 <span class="fs-5 sansita-swashed">Vase</span>
           </h2>
           <h3 class="text-light lh-lg my-3 fs-6">
-            在室內空間中的一隅，需要器皿去襯托花的美好，<br />讓花朵的美，更容易讓人看見！
+            在室內空間中的一隅，<br />器皿與花朵的相互陪襯，<br />讓花朵的美好，於綻放時更容易讓人看見！
           </h3>
         </div>
         <div
@@ -102,9 +102,9 @@
 
   <!-- 精選商品 輪播 -->
 
-  <div class="container my-6">
+  <div class="container my-6 products-selected">
     <h2 class="fs-2 text-primary fw-bold mb-4">
-      精選商品 <span class="fs-5">Selected</span>
+      精選商品 <span class="fs-5 sansita-swashed">Selected</span>
     </h2>
     <RandomSwiper />
     <div class="text-center mt-4 my-sm-5">
@@ -123,7 +123,7 @@
         class="about-des col-md-6 d-flex justify-content-center align-items-center flex-column"
       >
         <h2 class="fs-2 text-primary fw-bold mb-5">
-          關於我們 <span class="fs-5">About us</span>
+          關於我們 <span class="fs-5 sansita-swashed">About us</span>
         </h2>
         <h3 class="text-light lh-lg fs-6">
           The florist 花閣 讓花成為你生活中的陪伴<br />
@@ -161,6 +161,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.sansita-swashed {
+  font-family: "Sansita Swashed", cursive;
+}
+
 .banner {
   height: calc(100vh - 200px);
   background-attachment: fixed;
@@ -169,7 +173,6 @@ export default {
   background-position: center center;
   .title {
     font-size: 60px;
-    font-family: "Sansita Swashed", cursive;
     text-align: center;
     font-weight: 600;
     top: 40%;
@@ -204,10 +207,8 @@ export default {
 }
 .category-title {
   text-shadow: 1px 1px #f9d4ba;
-  span {
-    font-family: "Sansita Swashed", cursive;
-  }
 }
+
 .category-img {
   height: 25rem;
   border-radius: 1rem;
@@ -215,16 +216,19 @@ export default {
   background-size: cover;
   background-position: center center;
 }
+
 @media screen and (min-width: 769px) {
   .category-img {
     height: 30rem;
   }
 }
+
 .see-more {
   letter-spacing: 5px;
   padding-left: 30px;
   padding-right: 30px;
 }
+
 .about-img {
   height: 28rem;
   width: 33rem;
@@ -236,6 +240,7 @@ export default {
     border-radius: 1rem;
   }
 }
+
 @media screen and (min-width: 769px) {
   .about-img {
     height: 24rem;
