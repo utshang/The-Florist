@@ -24,7 +24,7 @@ Demo：https://utshang.github.io/The-Florist/
 - Swiper.js
 - ESlint Prettier
 - Material icons
-- Google 試算表建立資料庫
+- Google App Script
 
 ### 前台
 
