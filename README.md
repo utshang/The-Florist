@@ -1,4 +1,4 @@
-# Vue 電商作品 - The Florist 花藝電商
+｀# Vue 電商作品 - The Florist 花藝電商
 
 Demo：https://utshang.github.io/The-Florist/
 
@@ -24,6 +24,7 @@ Demo：https://utshang.github.io/The-Florist/
 - Swiper.js
 - ESlint Prettier
 - Material icons
+- Google 試算表建立資料庫
 
 ### 前台
 
