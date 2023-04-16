@@ -260,10 +260,7 @@ export default {
         })
         .catch((err) => {
           this.loadingItem = "";
-          this.emitter.emit("push-message", {
-            style: "danger",
-            title: err.response.data.message,
-          });
+          this.$httpMessageState(err.response, err.response.data.message);
         });
     },
     getAllProducts() {
