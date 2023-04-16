@@ -104,7 +104,7 @@ export default {
   },
   methods: {
     getOrder(id) {
-      // console.log(this.$route);
+      console.log(this.$route);
       this.$http
         .get(
           `${process.env.VUE_APP_API}/v2/api/${process.env.VUE_APP_PATH}/order/${id}`

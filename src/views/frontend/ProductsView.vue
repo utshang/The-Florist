@@ -255,7 +255,6 @@ export default {
             style: "success",
             title: res.data.message,
           });
-          console.log(res);
           this.emitter.emit("get-cart");
         })
         .catch((err) => {
