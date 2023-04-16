@@ -1,4 +1,4 @@
-｀# Vue 電商作品 - The Florist 花藝電商
+# Vue 電商作品 - The Florist 花藝電商
 
 Demo：https://utshang.github.io/The-Florist/
 
